@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Challenge</title>
+    <style>
+      @keyframes explode {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.2);
+          opacity: 0.8;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      body {
+        background: linear-gradient(45deg, #ff9c9c, #ffbdbd, #ffe2e2, #ffffff);
+        color: #333333;
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 120px;
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+        animation: explode 2s ease-in-out infinite;
+      }
+
+      p {
+        font-size: 32px;
+        margin-top: 40px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      a {
+        display: inline-block;
+        background: linear-gradient(45deg, #ff9c9c, #ffbdbd, #ffe2e2, #ffffff);
+        color: #333333;
+        text-decoration: none;
+        font-size: 32px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 40px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        transition: background 0.3s ease;
+      }
+
+      a:hover {
+        background: linear-gradient(45deg, #ff3555, #ff6037, #ff9000, #ffd500);
+      }
+
+      .decoration {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(45deg, #ff3555, #ff6037, #ff9000, #ffd500);
+        top: 0;
+        left: 0;
+        animation: rotate 5s linear infinite;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Nice!!!</h1>
+    <p>
+      you proved that you are ready for a <strong>real</strong> challenge, good
+      luck!
+    </p>
+    <a href="C:\Main folder\Shit\My own life\tamar bday\Tamars present.docx"
+      >The challenge</a
+    >
+
+    <div class="decoration"></div>
+    <div class="decoration" style="top: 50%; left: 50%"></div>
+    <div class="decoration" style="top: 75%; left: 25%"></div>
+    <div class="decoration" style="top: 25%; left: 75%"></div>
+  </body>
+</html>
